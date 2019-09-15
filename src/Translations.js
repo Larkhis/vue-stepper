@@ -48,5 +48,10 @@ export default {
         next: 'Nästa',
         back: 'Tillbaka',
         finish: 'Skicka'
+    },
+    fr: {
+        next: 'Suivant',
+        back: 'Précédent',
+        finish: 'Terminer'
     }
-}
+};

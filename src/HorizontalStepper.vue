@@ -62,7 +62,7 @@ export default {
   props: {
     locale: {
       type: String,
-      default: "en"
+      default: "fr"
     },
     topButtons: {
       type: Boolean,
