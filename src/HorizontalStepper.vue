@@ -9,7 +9,7 @@
                     </div>
                 </template>
                 <template v-for="(step, index) in steps">
-                    <div :class="['step', isStepActive(index, step)]" :key="index" :style="{width: `${100 / steps.length}%`}">
+                    <div :class="['step', isStepActive(index)]" :key="index" :style="{width: `${100 / steps.length}%`}">
                         <div class="circle">
                             <i class="material-icons md-18">
                                 {{ (step.completed) ? 'done' : step.icon }}
@@ -126,7 +126,7 @@ export default {
   },
 
   methods: {
-    isStepActive(index, step) {
+    isStepActive(index) {
       if (this.currentStep.index === index) {
         return "activated";
       } else {
